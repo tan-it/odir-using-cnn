@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>base</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='../static/css/style.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+</head>
+
+<body style="background: #F7F9F9;
+background: -webkit-linear-gradient(top, #F7F9F9, #429CD2);
+background: -moz-linear-gradient(top, #F7F9F9, #429CD2);
+background: linear-gradient(to bottom, #F7F9F9, #429CD2);">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary fixed-top px-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="../static/images/eye.jpeg" alt="" height="60" width="150" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/prediction">Prediction</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        designed by
+                    </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Tanuj Chavan</a></li>
+                            <li><a class="dropdown-item" href="#">Divyang Dushman </a></li>
+
+                            <li>
+                                <a class="dropdown-item" href="#">Pragathi mahale</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    </div>
+
+    <form class="form-main" action="prediction" method="POST" enctype="multipart/form-data">
+        <div class="form">
+
+            <h2>Ocular Disease Intelligent Recongnition Retina Image Search Tool </h2>
+            <h3 class="instruction">Instruction</h3>
+            <p class="instructions">Upload your right and left eye retina image taken from fundus machine</p>
+
+            <div class="grid">
+
+                <div class="form-element">
+                    <input type="file" id="file-1" name="left" accept="image/*">
+                    <label for="file-1" id="file-1-preview">
+						<img src="https://bit.ly/3ubuq5o" alt="">
+						<div>
+							<span>Left Eye Image</span>
+						</div>
+					</label>
+                </div>
+                <div class="form-element">
+                    <input type="file" id="file-2" name="right" accept="image/*">
+                    <label for="file-2" id="file-2-preview">
+						<img src="https://bit.ly/3ubuq5o" alt="">
+						<div>
+							<span>Right Eye Image</span>
+						</div>
+					</label>
+                </div>
+
+            </div>
+
+            <div class="submit"><input type="submit" name="btn">
+            </div>
+        </div>
+
+    </form>
+    <section class="info">
+        <h3 class="info1">&diams;&nbsp; Ocular Disease Intelligent Recongnition Retina Image Search</h3>
+        <p class="main-info"><span>1) Search your retina disease by uploading a fundus image from your smartphone or
+				desktop. <br>
+				2) Our tool is able to detect 6 types of disease include Cataract, myopia,Glaucoma,Hypertension,macular degeneration,diabetes <br>
+				3) The tool is still in devolopment phase so there are chances of some technical mistakes
+
+			</span></p>
+
+    </section>
+
+    <div class="whole">
+        <div class="doct">
+            <div class="card">
+                <img src="https://www.researchgate.net/profile/Syed-Thouheed-Ahmed/publication/320237162/figure/fig1/AS:546279352946689@1507254555299/Internal-Overview-of-Normal-Eye-X-Ray.png"></a>
+                <div class="containt">
+                    <h4>NORMAL EYE</h4>
+                    <p>A healthy eye, the lens is clear and allows light to pass through. Light is focused by the cornea and lens onto a thin layer of tissue called the retina. The retina works like the film in a camera. When light hits the retina, tiny
+                        cells collect the light signals and convert them into electrical signals, which are then sent through the optic nerve and to the brain, where they are processed into the images we see.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/2001334788/2005212462/gr1.jpg">
+                <div class="containt">
+                    <h4>DIABETES</h4>
+                    <p>The retina NIH external link is the inner lining at the back of each eye. The retina senses light and turns it into signals that your brain decodes, so you can see the world around you. Damaged blood vessels can harm the retina, causing
+                        a disease called diabetic retinopathy. In early diabetic retinopathy, blood vessels can weaken, bulge, or leak into the retina. This stage is called nonproliferative diabetic retinopathy.
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.nextsight.info/images/ARTICLES_PICTURES/PATIENT_T7_T7_01-10-2019_OD_Central_Automatic_CDR.jpg">
+                <div class="containt">
+                    <h4>GLAUCOMA</h4>
+                    <p>Glaucoma is a group of eye diseases that can damage the optic nerve—the bundle of nerves that connects the eye to the brain. Diabetes doubles the chances of having glaucoma, which can lead to vision loss and blindness if not treated
+                        early.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.reviewofophthalmology.com/CMSImagesContent/2006/8/1_992_2.jpg">
+                </a>
+                <div class="containt">
+                    <h4>CATARACT</h4>
+                    <p>The lenses within our eyes are clear structures that help provide sharp vision—but they tend to become cloudy as we age. People with diabetes are more likely to develop cloudy lenses, called cataracts. People with diabetes can develop
+                        cataracts at an earlier age than people without diabetes. Researchers think that high glucose levels cause deposits to build up in the lenses of your eyes.</p>
+
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Intermediate_age_related_macular_degeneration.jpg">
+                <div class="containt">
+                    <h4>MACULAR DEGENERATION</h4>
+                    <p>Age-related macular degeneration (AMD) is a problem with your retina. It happens when a part of the retina called the macula is damaged.With AMD you lose your central vision. You cannot see fine details, whether you are looking at
+                        something close or far. But your peripheral (side) vision will still be normal. For instance, imagine you are looking at a clock with hands. With AMD, you might see the clock’s numbers but not the hands.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://media.sciencephoto.com/image/m1700186/800wm">
+                <div class="containt">
+                    <h4>HYPERTENSION</h4>
+                    <p>Along with causing heart and kidney problems, untreated high blood pressure can also affect your eyesight and lead to eye disease. Hypertension can cause damage to the blood vessels in the retina, the area at the back of the eye where
+                        images focus. This eye disease is known as hypertensive retinopathy.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://www.researchgate.net/profile/Leonard-Yip/publication/8989183/figure/fig3/AS:696317449875456@1543026425125/Myopic-fundus-with-subretinal-haemorrhages-at-the-fovea-and-along-the-inferotemporal.ppm">
+                <div class="containt">
+                    <h4>MYOPIA</h4>
+                    <p>Nearsightedness (myopia) is a common vision condition in which you can see objects near to you clearly, but objects farther away are blurry. It occurs when the shape of your eye causes light rays to bend (refract) incorrectly, focusing
+                        images in front of your retina instead of on your retina.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+            </li>
+            <li class="social-icon__item">
+                <a class="social-icon__link" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+
+        </ul>
+        <p>&copy;2021 Insight Institute | All Rights Reserved | Designed by. </p>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="{{url_for('static', filename='../static/js/main.js')}}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="{{url_for('static', filename='main.js')}}"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='../static/js/main.js')}}"></script>
+</body>
+
+</html>

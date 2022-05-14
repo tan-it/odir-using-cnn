@@ -1,0 +1,475 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Playfair+Display&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: lightslategray;
+}
+
+.form-main {
+    margin: 20px 0px 20px;
+    padding: 0px 50px;
+}
+
+.form {
+    margin: 20px 0px 20px;
+    margin-top: 80px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    border: solid rgb(76, 76, 240) 2px;
+}
+
+@media screen and (max-width: 1060px) {
+    .form {
+        margin: 20px 0px 20px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border: solid rgb(76, 76, 240) 2px;
+    }
+}
+
+.form h2 {
+    text-align: center;
+    color: #4792e7;
+    font-size: 3rem;
+    padding-top: 1rem;
+    font-weight: 400;
+    font-weight: 800;
+}
+
+.form .grid {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2px;
+    border-style: inset;
+    margin-bottom: 1.5rem;
+    background-color: cornsilk;
+    height: 27rem;
+}
+
+.instruction {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.instructions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.7rem;
+}
+
+.form .grid .form-element {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 20px 5px rgba(100, 100, 100, 0.1);
+    margin: 3rem;
+}
+
+.form .grid .form-element input {
+    display: none;
+}
+
+.form .grid .form-element img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form .grid .form-element div {
+    position: relative;
+    height: 40px;
+    margin-top: -10px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    line-height: 45px;
+    font-size: 0.5 rem;
+    color: #e5dce6;
+    font-weight: 10;
+}
+
+.form .grid .form-element div span {
+    font-size: 20px;
+    font-family: 'IM Fell English SC', serif;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+input[type=submit] {
+    background-color: rgb(10, 142, 194);
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: blue
+}
+
+input[type=submit]:active {
+    background-color: blue;
+    box-shadow: 0 5px rgb(13, 3, 99);
+    transform: translateY(4px);
+}
+
+
+/* seciuton feild */
+
+.info {
+    display: block;
+    justify-content: left;
+    align-items: center;
+    padding: 2em;
+    color: black
+}
+
+.main-info {
+    display: block;
+    padding: 0.3rem;
+    padding-left: 0.6rem;
+    color: blacks
+}
+
+@media screen and (max-width: 1366px) {
+    .instruction {
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        font-size: 3.5rem
+    }
+    .form .grid {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        height: 80rem;
+        gap: 20px;
+        border: inset;
+        margin-bottom: 1.5rem;
+        background-color: cornsilk;
+    }
+    .instructions {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+        font-size: 1.7rem
+    }
+    .form .grid .form-element {
+        width: 500px;
+        height: 400px;
+        box-shadow: 0px 0px 10px 5px rgba(100, 100, 100, 0.1);
+        margin: 4rem;
+    }
+    input[type=submit] {
+        background-color: rgb(10, 142, 194);
+        border: none;
+        color: white;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 3rem
+    }
+    .form .grid .form-element div {
+        position: relative;
+        height: 60px;
+        margin-top: -10px;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        line-height: 45px;
+        font-size: 3rem;
+        color: #e5dce6;
+        font-weight: 100;
+    }
+    .form .grid .form-element div span {
+        font-size: 35px;
+        font-family: 'IM Fell English SC', serif;
+    }
+    .info {
+        display: block;
+        justify-content: left;
+        align-items: center;
+        padding: 2em;
+        font-size: 1.5rem;
+    }
+    .info1 {
+        display: block;
+        justify-content: left;
+        align-items: center;
+        font-size: 3rem;
+    }
+}
+
+
+/* footer */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  background: #333;
+  justify-content: flex-end;
+  align-items: flex-end;
+  min-height: 100vh;
+} */
+
+.footer {
+    margin-top: 10rem;
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("https://i.ibb.co/wQZVxxk/wave.png");
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 4s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .footer p {
+        color: #fff;
+        margin: 15px 0 10px 0;
+        font-size: 2rem;
+        font-weight: 300;
+    }
+    .menu__link {
+        font-size: 2rem;
+        color: #fff;
+        margin: 0 19px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+        font-weight: 300;
+    }
+    .social-icon__link {
+        font-size: 4rem;
+        color: #fff;
+        margin: 0 40px;
+        display: inline-block;
+        transition: 0.5s;
+    }
+}
+
+#pred {
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.h {
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.v {
+    padding: 1.0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid red;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    transition: .3s ease background-color, color;
+    text-decoration: none;
+    width: 15%;
+}
+
+.ct:hover {
+    color: whitesmoke;
+    background-color: crimson;
+}
+
+.vtt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.doct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 20px;
+    margin-top: 100px;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-shadow: 0 8px 16px 0 rgb(14, 38, 61);
+    transition: 0.4s;
+    width: 400px;
+    height: 600px;
+    background: white;
+    text-align: center;
+    font-size: 15px;
+    float: left;
+    margin: 10px;
+    padding-left: 20px;
+    padding: 0.5rem;
+}
+
+.card img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 16px 32px 0 rgb(14, 38, 61);
+}
+
+.whole {
+    align-content: center;
+}
